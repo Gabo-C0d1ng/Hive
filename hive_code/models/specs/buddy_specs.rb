@@ -20,7 +20,8 @@ class TestBuddy < MiniTest::Test
     "musts" => "null",
     "donts" => "no cats, I am allergic",
     "coulds" => "would love to have a vegetable plot",
-    "about_me" => "I love backpacking and a multicultural environement!"}
+    "about_me" => "I love backpacking and a multicultural environement!"
+  }
 
     @buddy = Buddy.new(options)
 
