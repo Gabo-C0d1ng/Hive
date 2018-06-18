@@ -27,4 +27,6 @@ class TestMeetup < MiniTest::Test
     assert_equal("Let's play treasure hunt", result)
   end
 
+
+
 end
