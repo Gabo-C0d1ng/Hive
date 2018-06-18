@@ -26,6 +26,7 @@ class TestBuddy < MiniTest::Test
 
   end
 
+
   def test_name()
     result = @buddy.name()
     assert_equal("Sarah", result)
