@@ -1,35 +1,29 @@
-DROP TABLE genders;
 DROP TABLE meetups;
 DROP TABLE buddies;
 DROP TABLE coops;
+DROP TABLE genders;
+DROP TABLE sexualities;
 
-CREATE TABLE genders
-(
+
+CREATE TABLE genders (
   id SERIAL8 primary key,
   type VARCHAR(255) not null
 );
 
-CREATE TABLE meetups
-(
+CREATE TABLE sexualities (
   id SERIAL8 primary key,
-  title VARCHAR(255) not null,
-  address VARCHAR(255) not null,
-  event_date VARCHAR(255) not null,
-  time_start VARCHAR(255) not null,
-  time_end VARCHAR(255) not null,
-  description TEXT not null,
-  buddy_id INT8 references buddies(id),
-  coop_id INT8 references coops(id)
+  type VARCHAR(255) not null
 );
 
-CREATE TABLE buddies
-(
+CREATE TABLE buddies (
   id SERIAL8 primary key,
   name VARCHAR(255) not null,
   town VARCHAR(255) not null,
   age INT2 not null,
-  CREATE TYPE gender AS ENUM ('male', 'female', 'non-cisgender') not null,
-  CREATE TYPE sexuality AS ENUM ('asexual','pansexual', 'bisexual', 'heterosexual', 'into guys', 'into girls') not null,
+  gender_id INT8 references genders(id),
+  sexuality_id INT8 references sexualities(id),
+  -- CREATE TYPE gender AS ENUM ('male', 'female', 'non-cisgender') not null,
+  -- CREATE TYPE sexuality AS ENUM ('asexual','pansexual', 'bisexual', 'heterosexual', 'into guys', 'into girls') not null,
   special_needs_requirements BOOLEAN,
   special_needs_friendly BOOLEAN,
   smoker_frienly BOOLEAN,
@@ -43,12 +37,11 @@ CREATE TABLE buddies
   about_me TEXT not null
 );
 
-CREATE TABLE coops
-(
+CREATE TABLE coops (
   id SERIAL8 primary key,
   name VARCHAR(255) not null,
   town VARCHAR(255) not null,
-  CREATE TYPE area AS ENUM ('urban','rural', 'other') not null,
+  -- CREATE TYPE area AS ENUM ('urban','rural', 'other') not null,
   brief TEXT not null,
   special_needs_adapted BOOLEAN,
   special_needs_friendly BOOLEAN,
@@ -59,4 +52,17 @@ CREATE TABLE coops
   donts TEXT ,
   coulds TEXT ,
   vision TEXT not null
+);
+
+
+CREATE TABLE meetups (
+  id SERIAL8 primary key,
+  title VARCHAR(255) not null,
+  address VARCHAR(255) not null,
+  event_date VARCHAR(255) not null,
+  time_start VARCHAR(255) not null,
+  time_end VARCHAR(255) not null,
+  description TEXT not null,
+  buddy_id INT8 references buddies(id),
+  coop_id INT8 references coops(id)
 );
