@@ -84,10 +84,32 @@ buddy2 = Buddy.new({
     "about_me" => "I enjoy outdoor sports. I would ideally share the house with people into sports. It is been a while I wanted to start kayaking. I'd be cool if we could go on a quad to explore Scottish fresh water over the winter. As a sports person I am constantly using the washing machine, so if we are many sports people, we better have a drying room."
     })
 
+  buddy5 = Buddy.new({
+    "name" => "Lenny",
+    "town" => "Edinburgh",
+    "age" => 68,
+    "gender" => "male",
+    "sexuality" => "heterosexual",
+    "special_needs_requirements" => false,
+    "special_needs_friendly" => true,
+    "smoker_frienly" => true,
+    "lgbtqia_friendly" => true,
+    "pet_friendly" => true,
+    "interests_hobbies" => "pocker, watchig sports",
+    "skills" => "welding, driving",
+    "musts" => "I like having friends around for poker games, so need to be ok to have guests some times",
+    "donts" => "",
+    "coulds" => " ",
+    "about_me" => "I have been single for ages since my divorce and I enjoy expending times with my pals. I work hard throught the week, you won't see much of me, I am a self employed welder. I like having a game of pocker with my pals o a friday, I'd be awesome if everyone at the house would like to join the social. We have a tournament going so every week we will play on a different house. I also like watching sports on a big screen and having few drinks. "
+    })
+
+
+
 buddy1.create()
 buddy2.create()
 buddy3.create()
 buddy4.create()
+buddy5.create()
 #
 # coop1 = Coop.new({
 #   "name" => "Auchinleck Housing Co-operative project",
