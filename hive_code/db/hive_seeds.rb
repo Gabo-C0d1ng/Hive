@@ -87,7 +87,7 @@ buddy2 = Buddy.new({
   buddy5 = Buddy.new({
     "name" => "Lenny",
     "town" => "Edinburgh",
-    "age" => 68,
+    "age" => 45,
     "gender" => "male",
     "sexuality" => "heterosexual",
     "special_needs_requirements" => false,
@@ -101,6 +101,25 @@ buddy2 = Buddy.new({
     "donts" => "",
     "coulds" => " ",
     "about_me" => "I have been single for ages since my divorce and I enjoy expending times with my pals. I work hard throught the week, you won't see much of me, I am a self employed welder. I like having a game of pocker with my pals o a friday, I'd be awesome if everyone at the house would like to join the social. We have a tournament going so every week we will play on a different house. I also like watching sports on a big screen and having few drinks. "
+    })
+
+  buddy6 = Buddy.new({
+    "name" => "Marion",
+    "town" => "Edinburgh",
+    "age" => 55,
+    "gender" => "female",
+    "sexuality" => "female",
+    "special_needs_requirements" => false,
+    "special_needs_friendly" => true,
+    "smoker_frienly" => false,
+    "lgbtqia_friendly" => true,
+    "pet_friendly" => false,
+    "interests_hobbies" => "bridge, cooking",
+    "skills" => "cooking, buying second hand bargains",
+    "musts" => "Kintchen must have a decent ventilated oven an good size fridge and cupboard",
+    "donts" => "Messy kitchen, house rules on this",
+    "coulds" => " ",
+    "about_me" => "I am divorced and middle aged but still young at heart. I love cooking and enternatining and I would love to have a weekly group meal if people is ok with that, not compulsory attendance, but I'd be really nice to seat together and have a family feel. I love the game of bridge, go onto tournaments. If people wants to have a bridge night i'd be amazing. "
     })
 
 
