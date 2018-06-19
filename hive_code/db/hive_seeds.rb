@@ -15,7 +15,7 @@ buddy1 = Buddy.new({
   "sexuality" => "lesbian",
   "special_needs_requirements" => nil,
   "special_needs_friendly" => true,
-  "smoker_frienly" => true,
+  "smoker_friendly" => true,
   "lgbtqia_friendly" => true,
   "pet_friendly" => true,
   "interests_hobbies" => "ping-pong, gardening",
@@ -27,14 +27,14 @@ buddy1 = Buddy.new({
 })
 
 buddy2 = Buddy.new({
-  "name" => "Felix",
+  "name" => "Teodor Alden",
   "town" => "Edinburgh",
   "age" => 48,
   "gender" => "male",
   "sexuality" => "bisexual",
   "special_needs_requirements" => true,
   "special_needs_friendly" => true,
-  "smoker_frienly" => false,
+  "smoker_friendly" => false,
   "lgbtqia_friendly" => true,
   "pet_friendly" => false,
   "interests_hobbies" => "computer gaming, knitting",
@@ -47,14 +47,14 @@ buddy2 = Buddy.new({
 
 
   buddy3 = Buddy.new({
-    "name" => "Mo Cadell",
+    "name" => "Alexis Cadell",
     "town" => "Edinburgh",
     "age" => 68,
     "gender" => "non cisgender",
     "sexuality" => "heterosexual",
     "special_needs_requirements" => true,
     "special_needs_friendly" => true,
-    "smoker_frienly" => false,
+    "smoker_friendly" => false,
     "lgbtqia_friendly" => nil,
     "pet_friendly" => true,
     "interests_hobbies" => "railway models, cheesemaking",
@@ -68,12 +68,12 @@ buddy2 = Buddy.new({
   buddy4 = Buddy.new({
     "name" => "Estelle Ellinor",
     "town" => "Edinburgh",
-    "age" => 68,
+    "age" => 48,
     "gender" => "female",
     "sexuality" => "heterosexual",
     "special_needs_requirements" => false,
     "special_needs_friendly" => nil,
-    "smoker_frienly" => false,
+    "ssmoker_friendly" => false,
     "lgbtqia_friendly" => nil,
     "pet_friendly" => true,
     "interests_hobbies" => "surfing, running",
@@ -92,7 +92,7 @@ buddy2 = Buddy.new({
     "sexuality" => "heterosexual",
     "special_needs_requirements" => false,
     "special_needs_friendly" => true,
-    "smoker_frienly" => true,
+    "ssmoker_friendly" => true,
     "lgbtqia_friendly" => true,
     "pet_friendly" => true,
     "interests_hobbies" => "pocker, watchig sports",
@@ -111,7 +111,7 @@ buddy2 = Buddy.new({
     "sexuality" => "lesbian",
     "special_needs_requirements" => false,
     "special_needs_friendly" => true,
-    "smoker_frienly" => false,
+    "smoker_friendly" => false,
     "lgbtqia_friendly" => true,
     "pet_friendly" => false,
     "interests_hobbies" => "bridge, cooking",
@@ -130,7 +130,7 @@ buddy2 = Buddy.new({
     "sexuality" => "heterosexual",
     "special_needs_requirements" => true,
     "special_needs_friendly" => true,
-    "smoker_frienly" => false,
+    "smoker_friendly" => false,
     "lgbtqia_friendly" => true,
     "pet_friendly" => true,
     "interests_hobbies" => "reading, writting, films",
@@ -149,7 +149,7 @@ buddy2 = Buddy.new({
     "sexuality" => "gay",
     "special_needs_requirements" => false,
     "special_needs_friendly" => true,
-    "smoker_frienly" => true,
+    "smoker_friendly" => false,
     "lgbtqia_friendly" => true,
     "pet_friendly" => true,
     "interests_hobbies" => "manga, cos play, role games",
@@ -158,6 +158,25 @@ buddy2 = Buddy.new({
     "donts" => "",
     "coulds" => "A film screening night would be great",
     "about_me" => "I am a quiet type but you can see my true colors when I am playing my favorite past time, role games and cos play. I have been known to perform on a drag show with Nancy Clench! Day time I am the most serious person ever. I work an the finance department of Scottish Widows. Happy to look at the coop's mortgage offers and help to pick a sensible one "
+    })
+
+  buddy9 = Buddy.new({
+    "name" => "Zachariah Erik",
+    "town" => "Edinburgh",
+    "age" => 35,
+    "gender" => "male",
+    "sexuality" => "heterosexual",
+    "special_needs_requirements" => false,
+    "special_needs_friendly" => true,
+    "smoker_friendly" => true,
+    "lgbtqia_friendly" => nil,
+    "pet_friendly" => true,
+    "interests_hobbies" => "shamanism, juggling",
+    "skills" => "I prepare the best coffe in town!",
+    "musts" => "",
+    "donts" => "",
+    "coulds" => "Having a garden would be awesome",
+    "about_me" => "I am into indi music and loads of alternative stuff, like shamanic dumming and juggling with fire props. I enjoy sharing what I have got, really into recycling and growing my own"
     })
 
 
@@ -172,6 +191,7 @@ buddy5.create()
 buddy6.create()
 buddy7.create()
 buddy8.create()
+buddy9.create()
 #
 # coop1 = Coop.new({
 #   "name" => "Auchinleck Housing Co-operative project",
@@ -180,7 +200,7 @@ buddy8.create()
 #   "brief" => "Sustainable women's coop",
 #   "special_needs_adapted" => false,
 #   "special_needs_friendly" => true,
-#   "smoker_frienly" => false,
+#   "smoker_friendly" => false,
 #   "lgbtqia_friendly" => true,
 #   "pet_friendly" => false,
 #   "musts" => "Members to be cisgender or trans women",
@@ -196,7 +216,7 @@ buddy8.create()
 #   "brief" => "Pals want to share a house by the shore",
 #   "special_needs_adapted" => false,
 #   "special_needs_friendly" => true,
-#   "smoker_frienly" => true,
+#   "smoker_friendly" => true,
 #   "lgbtqia_friendly" => nil,
 #   "pet_friendly" => false,
 #   "musts" => "",
@@ -212,7 +232,7 @@ buddy8.create()
 #   "brief" => "Pals want to share a house by the shore",
 #   "special_needs_adapted" => false,
 #   "special_needs_friendly" => true,
-#   "smoker_frienly" => false,
+#   "smoker_friendly" => false,
 #   "lgbtqia_friendly" => true,
 #   "pet_friendly" => true,
 #   "musts" => "",
