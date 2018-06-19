@@ -3,7 +3,7 @@ require_relative( "../models/buddy.rb" )
 # require_relative( "../models/meetup.rb" )
 require("pry-byebug")
 
-# Buddy.delete_all()
+Buddy.delete_all()
 # Coop.delete_all()
 # Meetup.delete_all()
 
@@ -68,7 +68,7 @@ buddy2 = Buddy.new({
 buddy1.create()
 buddy2.create()
 buddy3.create()
-# 
+#
 # coop1 = Coop.new({
 #   "name" => "Auchinleck Housing Co-operative project",
 #   "town" => "Edinburgh",
