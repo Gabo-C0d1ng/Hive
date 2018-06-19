@@ -8,7 +8,7 @@ Buddy.delete_all()
 # Meetup.delete_all()
 
 buddy1 = Buddy.new({
-  "name" => "Sarah",
+  "name" => "Rakel Cadell",
   "town" => "Edinburgh",
   "age" => 27,
   "gender" => "female",
@@ -47,7 +47,7 @@ buddy2 = Buddy.new({
 
 
   buddy3 = Buddy.new({
-    "name" => "Henry",
+    "name" => "Mo Cadell",
     "town" => "Edinburgh",
     "age" => 68,
     "gender" => "non cisgender",
@@ -66,7 +66,7 @@ buddy2 = Buddy.new({
     })
 
   buddy4 = Buddy.new({
-    "name" => "Lucas",
+    "name" => "Estelle Ellinor",
     "town" => "Edinburgh",
     "age" => 68,
     "gender" => "female",
@@ -85,7 +85,7 @@ buddy2 = Buddy.new({
     })
 
   buddy5 = Buddy.new({
-    "name" => "Lenny",
+    "name" => "Vanda Gittan",
     "town" => "Edinburgh",
     "age" => 45,
     "gender" => "male",
@@ -104,11 +104,11 @@ buddy2 = Buddy.new({
     })
 
   buddy6 = Buddy.new({
-    "name" => "Marion",
+    "name" => "Marcelina Cenek",
     "town" => "Edinburgh",
     "age" => 55,
     "gender" => "female",
-    "sexuality" => "female",
+    "sexuality" => "lesbian",
     "special_needs_requirements" => false,
     "special_needs_friendly" => true,
     "smoker_frienly" => false,
@@ -122,6 +122,27 @@ buddy2 = Buddy.new({
     "about_me" => "I am divorced and middle aged but still young at heart. I love cooking and enternatining and I would love to have a weekly group meal if people is ok with that, not compulsory attendance, but I'd be really nice to seat together and have a family feel. I love the game of bridge, go onto tournaments. If people wants to have a bridge night i'd be amazing. "
     })
 
+  buddy7 = Buddy.new({
+    "name" => "Leon Vilhelm",
+    "town" => "Edinburgh",
+    "age" => 37,
+    "gender" => "male",
+    "sexuality" => "heterosexual",
+    "special_needs_requirements" => true,
+    "special_needs_friendly" => true,
+    "smoker_frienly" => false,
+    "lgbtqia_friendly" => true,
+    "pet_friendly" => true,
+    "interests_hobbies" => "reading, writting, films",
+    "skills" => "reading legal documentation and writting contracts",
+    "musts" => "I have fybromialgia so would prefer a first ground floor room",
+    "donts" => "Can not carry heavy weights",
+    "coulds" => "A film screening night would be great",
+    "about_me" => "I work part time as a legal assistant for the Scottish Chambers so feel comfortable about dealing with the coop paperwork. I would love to share with people that has a sensibility towards my limitations, as I have fybromialgia. I personally love peace and quiet to writte, but love to socialise around sharing ideas on plots for books and film scripts. "
+    })
+
+
+
 
 
 buddy1.create()
@@ -129,6 +150,8 @@ buddy2.create()
 buddy3.create()
 buddy4.create()
 buddy5.create()
+buddy6.create()
+buddy7.create()
 #
 # coop1 = Coop.new({
 #   "name" => "Auchinleck Housing Co-operative project",
