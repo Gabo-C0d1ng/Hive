@@ -141,6 +141,25 @@ buddy2 = Buddy.new({
     "about_me" => "I work part time as a legal assistant for the Scottish Chambers so feel comfortable about dealing with the coop paperwork. I would love to share with people that has a sensibility towards my limitations, as I have fybromialgia. I personally love peace and quiet to writte, but love to socialise around sharing ideas on plots for books and film scripts. "
     })
 
+  buddy8 = Buddy.new({
+    "name" => "Zachariah Erik",
+    "town" => "Edinburgh",
+    "age" => 41,
+    "gender" => "male",
+    "sexuality" => "gay",
+    "special_needs_requirements" => false,
+    "special_needs_friendly" => true,
+    "smoker_frienly" => true,
+    "lgbtqia_friendly" => true,
+    "pet_friendly" => true,
+    "interests_hobbies" => "manga, cos play, role games",
+    "skills" => "finance management",
+    "musts" => "",
+    "donts" => "",
+    "coulds" => "A film screening night would be great",
+    "about_me" => "I am a quiet type but you can see my true colors when I am playing my favorite past time, role games and cos play. I have been known to perform on a drag show with Nancy Clench! Day time I am the most serious person ever. I work an the finance department of Scottish Widows. Happy to look at the coop's mortgage offers and help to pick a sensible one "
+    })
+
 
 
 
@@ -152,6 +171,7 @@ buddy4.create()
 buddy5.create()
 buddy6.create()
 buddy7.create()
+buddy8.create()
 #
 # coop1 = Coop.new({
 #   "name" => "Auchinleck Housing Co-operative project",
