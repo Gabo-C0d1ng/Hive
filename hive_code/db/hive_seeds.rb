@@ -1,11 +1,13 @@
 require_relative( "../models/buddy.rb" )
 require_relative( "../models/coop.rb" )
-# require_relative( "../models/meetup.rb" )
+require_relative( "../models/meetup.rb" )
 require("pry-byebug")
 
+Meetup.delete_all()
 Buddy.delete_all()
 Coop.delete_all()
-# Meetup.delete_all()
+
+
 
 buddy1 = Buddy.new({
   "name" => "Rakel Cadell",
@@ -262,43 +264,43 @@ coop1.create()
 coop2.create()
 coop3.create()
 coop4.create()
-#
-# meetup1 = Meetup.new({
-#   "title" => "Let's play treasure hunt",
-#   "address" => "34 Comely Bank EH3 5TF",
-#   "meetup_date" => "04-26-18",
-#   "time_start" => "12.00",
-#   "time_end" => "15.00",
-#   "description" => "Bring weather proof clothing, this is an outdoor event. We will be dividing in groups and following an Edinburgh Old Town treasure hunt. Your internet connextion must be off during the hunt!",
-#   "buddy_id" => buddy1.id,
-#   "coop_id" => coop1.id
-#   })
-#
-#   meetup2 = Meetup.new({
-#     "title" => "Let's come up with an app for no tech people",
-#     "address" => "45 Saint Leonards Bank EH8 5TF",
-#     "meetup_date" => "07-16-18",
-#     "time_start" => "10.00",
-#     "time_end" => "19.00",
-#     "description" => "We are meetig at Dodo's place to work on an a coding project. Few of us are into software programming, so we will do the dirty work. Any extra hands more than welcome!. The idea is to come up with an app that could solve a social need, considering the users experience on the journey. We will hopefully have it uploaded online by the end of the day!",
-#     "buddy_id" => buddy3.id,
-#     "coop_id" => coop3.id
-#     })
-#
-#     meetup3 = Meetup.new({
-#       "title" => "House of cards challenge & cake",
-#       "address" => "Coffe Angel, 130 Nicholson street, EH3 8HR",
-#       "meetup_date" => "08-12-18",
-#       "time_start" => "17.00",
-#       "time_end" => "19.00",
-#       "description" => "This is one of the most challenging team building games we could find. The goal of the activity is to encourage unity and creative thinking. Each team is presented with an identical problem, but it’s up to each team to figure out how to solve that problem in the most efficient way possible. The team members all have to work together to find the best way to stack the cards, as well as actually do the stacking–a task that takes a lot of patience. It’s definitely going to bring your teams together once they figure out how to do it right!",
-#       "buddy_id" => buddy2.id,
-#       "coop_id" => coop2.id
-#       })
 
-# meetup1.create()
-# meetup2.create()
-# meetup3.create()
+meetup1 = Meetup.new({
+  "title" => "Let's play treasure hunt",
+  "address" => "34 Comely Bank EH3 5TF",
+  "meetup_date" => "04-26-18",
+  "time_start" => "12.00",
+  "time_end" => "15.00",
+  "description" => "Bring weather proof clothing, this is an outdoor event. We will be dividing in groups and following an Edinburgh Old Town treasure hunt. Your internet connextion must be off during the hunt!",
+  "buddy_id" => buddy1.id,
+  "coop_id" => coop1.id
+  })
+
+  meetup2 = Meetup.new({
+    "title" => "Let's come up with an app for no tech people",
+    "address" => "45 Saint Leonards Bank EH8 5TF",
+    "meetup_date" => "07-16-18",
+    "time_start" => "10.00",
+    "time_end" => "19.00",
+    "description" => "We are meetig at Dodo's place to work on an a coding project. Few of us are into software programming, so we will do the dirty work. Any extra hands more than welcome!. The idea is to come up with an app that could solve a social need, considering the users experience on the journey. We will hopefully have it uploaded online by the end of the day!",
+    "buddy_id" => buddy3.id,
+    "coop_id" => coop3.id
+    })
+
+    meetup3 = Meetup.new({
+      "title" => "House of cards challenge & cake",
+      "address" => "Coffe Angel, 130 Nicholson street, EH3 8HR",
+      "meetup_date" => "08-12-18",
+      "time_start" => "17.00",
+      "time_end" => "19.00",
+      "description" => "This is one of the most challenging team building games we could find. The goal of the activity is to encourage unity and creative thinking. Each team is presented with an identical problem, but it’s up to each team to figure out how to solve that problem in the most efficient way possible. The team members all have to work together to find the best way to stack the cards, as well as actually do the stacking–a task that takes a lot of patience. It’s definitely going to bring your teams together once they figure out how to do it right!",
+      "buddy_id" => buddy2.id,
+      "coop_id" => coop2.id
+      })
+
+meetup1.create()
+meetup2.create()
+meetup3.create()
 
 
 binding.pry
