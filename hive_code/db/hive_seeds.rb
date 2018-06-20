@@ -298,9 +298,21 @@ meetup1 = Meetup.new({
       "coop_id" => coop2.id
       })
 
+      meetup3 = Meetup.new({
+        "title" => "First meet up! Let's gathr at Dog House",
+        "address" => "Dog House, 150 Clerk street, EH5 8HR",
+        "meetup_date" => "09-12-18",
+        "time_start" => "1.00",
+        "time_end" => "19.00",
+        "description" => "An introductory first meet up to get to know each other and plan the next",
+        "buddy_id" => buddy6.id,
+        "coop_id" => coop4.id
+        })
+
 meetup1.create()
 meetup2.create()
 meetup3.create()
+meetup4.create()
 
 
 binding.pry
