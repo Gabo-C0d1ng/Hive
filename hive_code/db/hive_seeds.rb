@@ -1,10 +1,10 @@
 require_relative( "../models/buddy.rb" )
-# require_relative( "../models/coop.rb" )
+require_relative( "../models/coop.rb" )
 # require_relative( "../models/meetup.rb" )
 require("pry-byebug")
 
 Buddy.delete_all()
-# Coop.delete_all()
+Coop.delete_all()
 # Meetup.delete_all()
 
 buddy1 = Buddy.new({
@@ -192,58 +192,58 @@ buddy6.create()
 buddy7.create()
 buddy8.create()
 buddy9.create()
-#
-# coop1 = Coop.new({
-#   "name" => "Auchinleck Housing Co-operative project",
-#   "town" => "Edinburgh",
-#   "area" => "urban",
-#   "brief" => "Sustainable women's coop",
-#   "special_needs_adapted" => false,
-#   "special_needs_friendly" => true,
-#   "smoker_friendly" => false,
-#   "lgbtqia_friendly" => true,
-#   "pet_friendly" => false,
-#   "musts" => "Members to be cisgender or trans women",
-#   "donts" => "",
-#   "coulds" => "Have support grops run weekly at the living area",
-#   "vision" => "Our vision if for Auchinleck Housing Co-operative to be a women’s and trans friendly co-op ideally by the Newhaven area of Edinburgh. We would like it to be a hub for groups offering We would like it to be 8-12 members with an age range from 20s to 70s. We would like for the house managed considering sustainability principles."
-# })
-#
-# coop2 = Coop.new({
-#   "name" => "Bath Street Housing Co-op project",
-#   "town" => "Portobello",
-#   "area" => "urban",
-#   "brief" => "Pals want to share a house by the shore",
-#   "special_needs_adapted" => false,
-#   "special_needs_friendly" => true,
-#   "smoker_friendly" => true,
-#   "lgbtqia_friendly" => nil,
-#   "pet_friendly" => false,
-#   "musts" => "",
-#   "donts" => "",
-#   "coulds" => "",
-#   "vision" => "We just want a very simple version of a housing coop. We do not adhere a particular set of revolutionary values, just mutual respect and the will to share a place we own"
-# })
-#
-# coop3 = Coop.new({
-#   "name" => "Ploughshare Housing Co-op",
-#   "town" => "Edinburgh",
-#   "area" => "urban",
-#   "brief" => "Pals want to share a house by the shore",
-#   "special_needs_adapted" => false,
-#   "special_needs_friendly" => true,
-#   "smoker_friendly" => false,
-#   "lgbtqia_friendly" => true,
-#   "pet_friendly" => true,
-#   "musts" => "",
-#   "donts" => "no dogs",
-#   "coulds" => "weekly communal evening meal",
-#   "vision" => "We have no real shared ideology, though we hold vaguely similar attitudes in terms of environment, social justice, politics etcetera. The group vision is to  accommodate people on low income in a traditionally wealthy area. The group would like to purchase a Victorian terraced house with small gardens to front and rear on a quiet street in the heart of Bruntsfield, close to the Meadows and a short walk from the centre of Edinburgh. This types of houses take 8 people. We are pet friendly for cats but dogs may be too much. We would like to have a fair split between men and women. Transgender people welcomed. We would like to have a group organic box scheme, an ethical milkman and bulk-buy food for communal evening vegetarian meals from Green City."
-# })
 
-# coop1.create()
-# coop2.create()
-# coop3.create()
+coop1 = Coop.new({
+  "name" => "Auchinleck Housing Co-operative project",
+  "town" => "Edinburgh",
+  "area" => "urban",
+  "brief" => "Sustainable women's coop",
+  "special_needs_adapted" => false,
+  "special_needs_friendly" => true,
+  "smoker_friendly" => false,
+  "lgbtqia_friendly" => true,
+  "pet_friendly" => false,
+  "musts" => "Members to be cisgender or trans women",
+  "donts" => "",
+  "coulds" => "Have support grops run weekly at the living area",
+  "vision" => "Our vision if for Auchinleck Housing Co-operative to be a women’s and trans friendly co-op ideally by the Newhaven area of Edinburgh. We would like it to be a hub for groups offering We would like it to be 8-12 members with an age range from 20s to 70s. We would like for the house managed considering sustainability principles."
+})
+
+coop2 = Coop.new({
+  "name" => "Bath Street Housing Co-op project",
+  "town" => "Portobello",
+  "area" => "urban",
+  "brief" => "Pals want to share a house by the shore",
+  "special_needs_adapted" => false,
+  "special_needs_friendly" => true,
+  "smoker_friendly" => true,
+  "lgbtqia_friendly" => nil,
+  "pet_friendly" => false,
+  "musts" => "",
+  "donts" => "",
+  "coulds" => "",
+  "vision" => "We just want a very simple version of a housing coop. We do not adhere a particular set of revolutionary values, just mutual respect and the will to share a place we own"
+})
+
+coop3 = Coop.new({
+  "name" => "Ploughshare Housing Co-op",
+  "town" => "Edinburgh",
+  "area" => "urban",
+  "brief" => "Pals want to share a house by the shore",
+  "special_needs_adapted" => false,
+  "special_needs_friendly" => true,
+  "smoker_friendly" => false,
+  "lgbtqia_friendly" => true,
+  "pet_friendly" => true,
+  "musts" => "",
+  "donts" => "no dogs",
+  "coulds" => "weekly communal evening meal",
+  "vision" => "We have no real shared ideology, though we hold vaguely similar attitudes in terms of environment, social justice, politics etcetera. The group vision is to  accommodate people on low income in a traditionally wealthy area. The group would like to purchase a Victorian terraced house with small gardens to front and rear on a quiet street in the heart of Bruntsfield, close to the Meadows and a short walk from the centre of Edinburgh. This types of houses take 8 people. We are pet friendly for cats but dogs may be too much. We would like to have a fair split between men and women. Transgender people welcomed. We would like to have a group organic box scheme, an ethical milkman and bulk-buy food for communal evening vegetarian meals from Green City."
+})
+
+coop1.create()
+coop2.create()
+coop3.create()
 #
 # meetup1 = Meetup.new({
 #   "title" => "Let's play treasure hunt",
