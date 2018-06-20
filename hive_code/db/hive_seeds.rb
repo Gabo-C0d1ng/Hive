@@ -241,9 +241,7 @@ coop3 = Coop.new({
   "vision" => "We have no real shared ideology, though we hold vaguely similar attitudes in terms of environment, social justice, politics etcetera. The group vision is to  accommodate people on low income in a traditionally wealthy area. The group would like to purchase a Victorian terraced house with small gardens to front and rear on a quiet street in the heart of Bruntsfield, close to the Meadows and a short walk from the centre of Edinburgh. This types of houses take 8 people. We are pet friendly for cats but dogs may be too much. We would like to have a fair split between men and women. Transgender people welcomed. We would like to have a group organic box scheme, an ethical milkman and bulk-buy food for communal evening vegetarian meals from Green City."
 })
 
-coop1.create()
-coop2.create()
-coop3.create()
+ 
 #
 # meetup1 = Meetup.new({
 #   "title" => "Let's play treasure hunt",
