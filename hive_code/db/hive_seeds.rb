@@ -229,7 +229,7 @@ coop3 = Coop.new({
   "name" => "Ploughshare Housing Co-op",
   "town" => "Edinburgh",
   "area" => "urban",
-  "brief" => "Pals want to share a house by the shore",
+  "brief" => "Affordable housing on property at city center",
   "special_needs_adapted" => false,
   "special_needs_friendly" => true,
   "smoker_friendly" => false,
@@ -241,7 +241,27 @@ coop3 = Coop.new({
   "vision" => "We have no real shared ideology, though we hold vaguely similar attitudes in terms of environment, social justice, politics etcetera. The group vision is to  accommodate people on low income in a traditionally wealthy area. The group would like to purchase a Victorian terraced house with small gardens to front and rear on a quiet street in the heart of Bruntsfield, close to the Meadows and a short walk from the centre of Edinburgh. This types of houses take 8 people. We are pet friendly for cats but dogs may be too much. We would like to have a fair split between men and women. Transgender people welcomed. We would like to have a group organic box scheme, an ethical milkman and bulk-buy food for communal evening vegetarian meals from Green City."
 })
 
- 
+
+coop4 = Coop.new({
+  "name" => "Silverlining Housing Co-op",
+  "town" => "Edinburgh",
+  "area" => "urban",
+  "brief" => "A friendly +50 coop",
+  "special_needs_adapted" => true,
+  "special_needs_friendly" => true,
+  "smoker_friendly" => false,
+  "lgbtqia_friendly" => true,
+  "pet_friendly" => true,
+  "musts" => "Building will have adaptations for older age",
+  "donts" => "",
+  "coulds" => "Daily communal meal",
+  "vision" => "We are two retired friends, widowed and divorced, and are getting fed up with living along. We are growing older and would like to come together on a supportive community of like minded people, to support each other and care of each other on our last years. We have ideas of running activities, so the coop could be managed a bit like a community center, perhaps we could open it to the wider community. The house must be ready to welcome our aging bodies, with adapted bathrooms, no stairs and generaly blind and deaf friendly!"
+})
+
+coop1.create()
+coop2.create()
+coop3.create()
+coop4.create()
 #
 # meetup1 = Meetup.new({
 #   "title" => "Let's play treasure hunt",
